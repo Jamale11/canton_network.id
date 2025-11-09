@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url("neura.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,255,150,0.3);
+  width: 90%;
+  max-width: 420px;
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 26px;
+  color: #00ffaa;
+  margin-bottom: 15px;
+  text-shadow: 0 0 15px #00ffaa;
+}
+
+input {
+  width: 80%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  font-size: 16px;
+}
+
+button {
+  background: linear-gradient(90deg, #00ffaa, #00cc88);
+  border: none;
+  padding: 12px 35px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.4s;
+  color: #000;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ffaa;
+}
+
+.card {
+  position: relative;
+  margin: 25px auto;
+  width: 340px;
+  height: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0d0d0d, #001a0f, #004d26);
+  box-shadow: 0 0 25px rgba(0,255,150,0.3);
+  padding: 20px;
+  text-align: left;
+  border: 1px solid rgba(0,255,150,0.4);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.logo {
+  width: 45px;
+  margin-right: 10px;
+  filter: drop-shadow(0 0 10px #00ff99);
+}
+
+.card-header h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffcc;
+  margin: 0;
+}
+
+.card-body {
+  margin-top: 10px;
+  line-height: 1.6;
+  display: grid;
+  grid-template-columns: 110px 1fr; /* lebar kolom label dan isi */
+  row-gap: 6px;
+}
+
+.label {
+  color: #aaa;
+  text-align: left;
+}
+
+.card-body p {
+  margin: 0;
+  display: contents; /* biar grid tetap rapi */
+}
+
+
+.canton-id {
+  color: #00ffee;
+  font-weight: bold;
+}
+
+#qrcode {
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  font-size: 10px;
+  color: #999;
+  font-family: 'Orbitron', sans-serif;
+}
+.powered {
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 11px;
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffaa;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  text-shadow: 0 0 8px #00ffcc;
+  }
