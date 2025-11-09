@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canton ID Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">CANTON ID GENERATOR</h1>
+    <input type="text" id="username" placeholder="Enter your username">
+    <button id="generateBtn">Generate Neura ID</button>
+
+    <div id="card" class="card" style="display:none;">
+      <div class="card-header">
+        <img src="canton-logo.jpg" alt="canton Logo" class="logo">
+        <h2>Canton Member</h2>
+      </div>
+
+      <div class="card-body">
+        <p><span class="label">Name:</span> <span id="card-username"></span></p>
+        <p><span class="label">Status:</span> Canton Early Member</p>
+        <p><span class="label">ID:</span> <span id="card-id" class="neura-id"></span></p>
+        <p><span class="label">Verification:</span> ✅ Verified</p>
+      </div>
+
+      <div id="qrcode"></div>
+      <p class="footer"></p>
+      <p class="powered">Powered by Canton_Network</p>
+      
+    </div>
+
+    <button id="downloadBtn" style="display:none;">Download as PNG</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
